@@ -4,19 +4,30 @@ This AI Technical Agent is a Python-based tool designed to generate detailed tec
 Features
 
 Automated Content Generation:
+
 	•	Uses Google Generative AI’s Gemini-2.0 model to generate 1500-word responses to user-defined technical questions.
 	•	Outputs responses in a personal, informal, and technical tone, similar to StackOverflow.
+ 
 Error Handling and Resumption:
+
 	•	Handles API quota limits and other exceptions gracefully.
 	•	Saves progress to a file (last_processed_index.txt) to resume from the last processed question.
+ 
 CSV Storage:
+
 	•	Stores generated responses in a CSV file (generated_content.csv) with fields for titles and content.
+ 
 Markdown Conversion:
+
 	•	Converts CSV entries into Markdown files using a predefined template for further use in documentation or static site generation.
 	•	Saves Markdown files in a structured folder (md_files).
+ 
 ID and Slug Generation:
+
 	•	Generates SEO-friendly slugs and unique IDs for each Markdown file based on the title.
-	6.	Configurable and Modular:
+ 
+Configurable and Modular:
+
 	•	Easy to add or update concepts for content generation.
 	•	Configurable file paths and templates for customization.
 
